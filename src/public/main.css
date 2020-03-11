@@ -1,0 +1,43 @@
+body {
+    font-size: 16px;
+}
+
+.head__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 114, 45);
+    font-size: 3rem;
+    border-radius: 4px;
+}
+
+.head__headline {
+    color: goldenrod
+}
+
+body {
+    background-color: #1D1d1d;
+}
+
+.body__row {
+    display: flex;
+}
+
+.body__image-container {
+    width: 50%;
+}
+
+.body__image-container--wide {
+    width: 100%;
+}
+
+.body__image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.body__text {
+    width: 50%;
+}
