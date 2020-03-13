@@ -104,8 +104,8 @@ p {
     justify-content: space-between;
 }
 
-.traning_title {
-    grid-area: header;
+.training_title {
+    width: 100%
 }
 
 .training__column {
