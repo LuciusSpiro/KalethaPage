@@ -3,7 +3,7 @@ h1 {
     font-weight: normal;
     margin-left: 30px;
     margin-top: 20px;
-}
+  }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -58,28 +58,34 @@ p {
 
 #content {
     margin: -100px 20px 0 20px;
-    border: 2x solid #000000;
+    border: 2px solid #000000;
     max-width: 1000px;
     background-color: #F3E2A9;
 }
 
 #karte {
-    height: 500px;
+    max-height: 500px;
 }
 
 
 #Conberichte {
-    height: 750px;
+    max-height: 750px;
 }
 
 #bild-klein {
     width: 200px;
+    height: 200px;
     border-width: 2px;
     border-style: solid;
     z-index: 5;
-    overflow: hidden;
-    float: right;
     margin: 20px 30px;
+    flex-shrink: 0;
+}
+
+#bild-klein img {
+  width: 196px;
+  height: 196px;
+  object-fit: cover;
 }
 
 #footer {
@@ -92,16 +98,18 @@ p {
 }
 
 #training {
-    display: grid;
-    grid-template-columns: repeat(3, 1ft);
-    grid-template-rows: 30px auto;
-    grid-template-areas: "header header header";
-    row-gap: 20px;
     padding: 0 30px 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .traning_title {
     grid-area: header;
+}
+
+.training__column {
+  padding: 10px;
 }
 
 #next {
@@ -109,10 +117,13 @@ p {
   flex-direction: column;
 }
 
-#next p {
-    width: 100%;
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
 }
 
-#next p:last-of-type {
-    width: 70%;
+.image-row p {
+  min-width: 200px;
+  max-width: 650px;
 }
