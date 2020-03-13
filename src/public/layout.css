@@ -22,17 +22,28 @@ p {
     font-size: medium;
 }
 
+.area {
+    z-index: 10;
+    border: 2px solid #000000;
+    overflow: hidden;
+}
+
 #container {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
+
+    background-color: #0B610B;
 }
 
 #header {
     height: 250px;
+    widows: 100%;
     border-color: 2px solid #000000;
+    background-color: darkgreen;
+    background-image: url("C:\Users\tamar\OneDrive\Desktop\header.jpg");
 }
 
 .header {
@@ -45,86 +56,30 @@ p {
     position: absolute;
 }
 
-.textarea {
-    z-index: 10;
-    border: 2x solid #000000;
-}
-
 #content {
     margin: -100px 20px 0 20px;
     border: 2x solid #000000;
-}
-
-#welcome {
-    width: auto;
-    border: 2px solid #000000;
-    z-index: 5;
+    max-width: 1000px;
+    background-color: #F3E2A9;
 }
 
 #karte {
-    width: auto;
     height: 500px;
-    border-width: 2px;
-    border-style: solid;
-    z-index: 5;
-    overflow: hidden;
 }
 
-#expheer {
-    width: auto;
-    border-bottom: black;
-    border-width: 2px;
-    border-style: solid;
-    z-index: 5;
-}
-
-#bild {
-    width: auto;
-    height: 500px;
-    border-width: 2px;
-    border-style: solid;
-    z-index: 5;
-    overflow: hidden;
-}
 
 #Conberichte {
-    width: auto;
-    width: auto;
     height: 750px;
-    border-width: 2px;
-    border-style: solid;
-    z-index: 5;
-    overflow: hidden;
-}
-
-#training {
-    width: auto;
-    border-bottom: black;
-    border-width: 2px;
-    border-style: solid;
-    z-index: 5;
-}
-
-#next {
-    width: auto;
-    border-bottom: black;
-    border-width: 2px;
-    border-style: solid;
-    z-index: 5;
-    overflow: hidden;
 }
 
 #bild-klein {
     width: 200px;
-    height: fit-content;
     border-width: 2px;
     border-style: solid;
     z-index: 5;
     overflow: hidden;
     float: right;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
+    margin: 20px 30px;
 }
 
 #footer {
@@ -133,22 +88,6 @@ p {
     margin-left: auto;
     margin-right: auto;
     z-index: 10;
-}
-
-#container {
-    background-color: #0B610B;
-}
-
-#header {
-    background-color: darkgreen;
-    background-image: url("C:\Users\tamar\OneDrive\Desktop\header.jpg");
-}
-
-#content {
-    background-color: #F3E2A9;
-}
-
-#footer {
     background-color: #0B3B0B;
 }
 
@@ -158,8 +97,22 @@ p {
     grid-template-rows: 30px auto;
     grid-template-areas: "header header header";
     row-gap: 20px;
+    padding: 0 30px 20px 30px;
 }
 
 .traning_title {
     grid-area: header;
+}
+
+#next {
+  display: flex;
+  flex-direction: column;
+}
+
+#next p {
+    width: 100%;
+}
+
+#next p:last-of-type {
+    width: 70%;
 }
